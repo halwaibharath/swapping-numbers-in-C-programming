@@ -1,0 +1,30 @@
+// write a C program to swapping of two numbers.
+#include<stdio.h>
+int main() 
+{
+      double first, second, third, temp;
+      printf("Enter first number: ");
+      scanf("%d", &first);
+      printf("Enter second number: ");
+      scanf("%d", &second);
+      printf("Enter third number: ");
+      scanf("%d", &third);
+
+      // Value of first is assigned to temp
+      temp = first;
+
+      // Value of second is assigned to first
+      first = third;
+
+      // Value of temp (initial value of first) is assigned to second
+       second = second;
+       
+       third = temp;
+       
+
+      printf("\nAfter swapping, firstNumber = %d\n", first);
+      printf("\nAfter swapping, secondNumber = %d\n", second);
+      printf("\nAfter swapping, thirdNumber = %d\n", third);
+      return 0;
+}
+
